@@ -2,7 +2,7 @@ function getNumbers() {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve([1, 2, 3, 4]);
-        }, 3000);
+        }, 2000);
     });
 }
 
