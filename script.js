@@ -1,6 +1,6 @@
-document.getElementById("btn").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const outputDiv = document.getElementById("output");
-    
+
     function getNumbers() {
         return new Promise((resolve) => {
             setTimeout(() => {
@@ -8,7 +8,7 @@ document.getElementById("btn").addEventListener("click", function () {
             }, 3000);
         });
     }
-    
+
     getNumbers()
         .then((numbers) => {
             return new Promise((resolve) => {
